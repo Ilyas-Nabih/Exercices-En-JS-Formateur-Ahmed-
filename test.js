@@ -7,9 +7,9 @@ let count = 0
 console.log(livres);
 
 const targetId = 1;
-const targetIds = 3;
+const targettitre = "les miserables";
 
-for (let i = 0; i < livres.length; i++) { // Changement de 1 à 0 ici
+for (let i = 0; i < livres.length; i++) {
     if (livres[i].id === targetId) {
         console.log(livres[i].titre);
         break;
@@ -24,8 +24,8 @@ for (let j = 0; j < livres.length ; j++) {
 console.log(count)
 
 for(let k = 0; k < livres.length ; k++) {
-    if(livres[k].id = targetIds) {
-        console.log(livres[k].auteur)
+    if(livres[k].titre === targettitre) {
+        console.log(livres[k].auteur +" ", livres[k].titre)
         break;
     }
 }
