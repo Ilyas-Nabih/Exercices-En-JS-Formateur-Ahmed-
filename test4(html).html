@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bibliotheque</title>
+    <link rel="stylesheet" href="test4(css).css">
+    <script src="test4.js" defer></script>
+</head>
+<body>
+<h1>Ma bibliothèque</h1>
+<p id="compteur"></p>
+<section id="liste-livres"></section>
+<form id="formulaire-livre">
+<!-- À compléter : titre, auteur, bouton Ajouter -->
+ <label for="titre">titre</label>
+ <input
+ type="text"
+ id="titre"
+ name="titre"
+ required
+ placeholder="titre de livre"
+ >
+ <label for="auteur">auteur</label>
+ <input
+ type="text"
+ id="auteur"
+ name="auteur"
+ required
+ placeholder="auteur de livre"
+ >
+ <label for="disponibilite">disponibilite</label>
+ <select id="disponibilite">
+    <option value="true">disponible</option>
+    <option value="false">emprunte</option>
+ </select>
+ <button type="submit">Ajouter</button>
+</form>
+    
+</body>
+</html>

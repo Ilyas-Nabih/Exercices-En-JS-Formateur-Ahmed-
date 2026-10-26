@@ -1,0 +1,103 @@
+/* --- Style général et réinitialisation de base --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* --- En-tête --- */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#compteur {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+/* --- Section Liste des Livres --- */
+#liste-livres {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Style recommandé pour les cartes de livres générées dynamiquement en JS */
+.carte-livre {
+  background-color: #ffffff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3498db;
+}
+
+/* --- Formulaire d'ajout --- */
+#formulaire-livre {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#formulaire-livre label {
+  font-weight: 600;
+  color: #34495e;
+  text-transform: capitalize;
+  margin-bottom: -0.5rem;
+}
+
+#formulaire-livre input,
+#formulaire-livre select {
+  padding: 0.75rem;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+#formulaire-livre input:focus,
+#formulaire-livre select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+/* --- Bouton Soumettre --- */
+#formulaire-livre button {
+  margin-top: 0.5rem;
+  padding: 0.85rem;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#formulaire-livre button:hover {
+  background-color: #2980b9;
+}
+
+#formulaire-livre button:active {
+  transform: scale(0.98);
+}
